@@ -550,8 +550,8 @@ The Operations stage will eventually include:
 - **MANDATORY**: Capture user's COMPLETE RAW INPUT exactly as provided (never summarize)
 - **MANDATORY**: Log every approval prompt with timestamp before asking the user
 - **MANDATORY**: Record every user response with timestamp after receiving it
-- **CRITICAL**: ALWAYS use `fsWrite` with `append` command for audit.md (NEVER use `create` command)
-- **CRITICAL**: Using `create` command will overwrite the entire file and cause duplication
+- **CRITICAL**: ALWAYS append changes to EDIT audit.md file, NEVER use tools and commands that completely overwrite its contents
+- **CRITICAL**: Using file writing tools and commands that overwrite contents of the entire audit.md and cause duplication
 - Use ISO 8601 format for timestamps (YYYY-MM-DDTHH:MM:SSZ)
 - Include stage context for each entry
 
@@ -566,14 +566,21 @@ The Operations stage will eventually include:
 ---
 ```
 
-### Correct Tool Usage for audit.md:
-```
-✅ CORRECT: fsWrite(command="append", path="aidlc-docs/audit.md", fileText="new entry")
-❌ WRONG: fsWrite(command="create", path="aidlc-docs/audit.md", fileText="all entries")
-```
+### Correct Tool Usage for audit.md
+
+✅ CORRECT:
+
+1. Read the audit.md file
+2. Append/Edit the file to make changes
+
+❌ WRONG:
+
+1. Read the audit.md file
+2. Completely overwrite the audit.md with the contents of what you read, plus the new changes you want to add to it
 
 ## Directory Structure
-```
+
+```text
 aidlc-docs/
 ├── inception/                  # 🔵 INCEPTION PHASE artifacts
 │   ├── plans/
@@ -638,4 +645,3 @@ aidlc-docs/
 ├── aidlc-state.md             # Dynamic state tracking
 └── audit.md                    # Complete audit trail
 ```
-

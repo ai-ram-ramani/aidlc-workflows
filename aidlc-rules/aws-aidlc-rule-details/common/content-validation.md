@@ -39,7 +39,6 @@ Phase 1: INCEPTION
 - Stage 2: Requirements Analysis (COMPLETED)
 [continue with text representation]
 ```
-```
 
 ## General Content Validation
 
@@ -51,7 +50,7 @@ Phase 1: INCEPTION
 - [ ] Include fallback content for complex elements
 
 ### Error Prevention Rules
-1. **Always validate before fsWrite**: Never write unvalidated content
+1. **Always validate before using tools/commands to write files**: Never write unvalidated content
 2. **Escape special characters**: Particularly in diagrams and code blocks
 3. **Provide alternatives**: Include text versions of visual content
 4. **Test syntax**: Validate complex content structures
