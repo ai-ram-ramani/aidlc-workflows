@@ -479,67 +479,31 @@ The Operations stage will eventually include:
 ## Directory Structure
 
 ```text
-aidlc-docs/
-├── inception/                  # 🔵 INCEPTION PHASE artifacts
-│   ├── plans/
-│   │   ├── workspace-detection.md
-│   │   ├── workflow-planning.md
-│   │   ├── story-generation-plan.md
-│   │   └── unit-of-work-plan.md
-│   ├── reverse-engineering/        # Brownfield only
-│   │   ├── architecture.md
-│   │   ├── code-structure.md
-│   │   ├── api-documentation.md
-│   │   ├── component-inventory.md
-│   │   ├── technology-stack.md
-│   │   ├── dependencies.md
-│   │   ├── code-quality-assessment.md
-│   │   └── reverse-engineering-timestamp.md
-│   ├── requirements/
-│   │   ├── requirements.md
-│   │   └── requirement-verification-questions.md
-│   ├── user-stories/
-│   │   ├── stories.md
-│   │   └── personas.md
-│   └── application-design/
-│       ├── components.md
-│       ├── component-methods.md
-│       ├── services.md
-│       ├── component-dependency.md
-│       ├── unit-of-work.md
-│       ├── unit-of-work-dependency.md
-│       └── unit-of-work-story-map.md
-├── construction/               # 🟢 CONSTRUCTION PHASE artifacts
-│   ├── plans/
-│   │   ├── {unit-name}-functional-design-plan.md
-│   │   ├── {unit-name}-nfr-requirements-plan.md
-│   │   ├── {unit-name}-nfr-design-plan.md
-│   │   ├── {unit-name}-infrastructure-design-plan.md
-│   │   └── {unit-name}-code-generation-plan.md
-│   ├── {unit-name}/
-│   │   ├── functional-design/
-│   │   │   ├── business-logic-model.md
-│   │   │   ├── business-rules.md
-│   │   │   └── domain-entities.md
-│   │   ├── nfr-requirements/
-│   │   │   ├── nfr-requirements.md
-│   │   │   └── tech-stack-decisions.md
-│   │   ├── nfr-design/
-│   │   │   ├── nfr-design-patterns.md
-│   │   │   └── logical-components.md
-│   │   ├── infrastructure-design/
-│   │   │   ├── infrastructure-design.md
-│   │   │   └── deployment-architecture.md
-│   │   └── code/
-│   │       └── [generated code files]
-│   └── build-and-test/
-│       ├── build-instructions.md
-│       ├── unit-test-instructions.md
-│       ├── integration-test-instructions.md
-│       ├── performance-test-instructions.md
-│       └── build-and-test-summary.md
-├── operations/                 # 🟡 OPERATIONS PHASE artifacts (placeholder)
-│   └── [Future: deployment and monitoring artifacts]
-├── aidlc-state.md             # Dynamic state tracking
-└── audit.md                    # Complete audit trail
+<WORKSPACE-ROOT>/                   # ⚠️ APPLICATION CODE HERE
+├── [project-specific structure]    # Varies by project (see code-generation.md)
+│
+├── aidlc-docs/                     # 📄 DOCUMENTATION ONLY
+│   ├── inception/                  # 🔵 INCEPTION PHASE
+│   │   ├── plans/
+│   │   ├── reverse-engineering/    # Brownfield only
+│   │   ├── requirements/
+│   │   ├── user-stories/
+│   │   └── application-design/
+│   ├── construction/               # 🟢 CONSTRUCTION PHASE
+│   │   ├── plans/
+│   │   ├── {unit-name}/
+│   │   │   ├── functional-design/
+│   │   │   ├── nfr-requirements/
+│   │   │   ├── nfr-design/
+│   │   │   ├── infrastructure-design/
+│   │   │   └── code/               # Markdown summaries only
+│   │   └── build-and-test/
+│   ├── operations/                 # 🟡 OPERATIONS PHASE (placeholder)
+│   ├── aidlc-state.md
+│   └── audit.md
 ```
+
+**CRITICAL RULE**:
+- Application code: Workspace root (NEVER in aidlc-docs/)
+- Documentation: aidlc-docs/ only
+- Project structure: See code-generation.md for patterns by project type

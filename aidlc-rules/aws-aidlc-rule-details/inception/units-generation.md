@@ -30,6 +30,7 @@ This stage decomposes the system into manageable units of work through two integ
 - [ ] Generate `aidlc-docs/inception/application-design/unit-of-work.md` with unit definitions and responsibilities
 - [ ] Generate `aidlc-docs/inception/application-design/unit-of-work-dependency.md` with dependency matrix
 - [ ] Generate `aidlc-docs/inception/application-design/unit-of-work-story-map.md` mapping stories to units
+- [ ] **Greenfield only**: Document code organization strategy in `unit-of-work.md` (see code-generation.md for structure patterns)
 - [ ] Validate unit boundaries and dependencies
 - [ ] Ensure all stories are assigned to units
 
@@ -46,6 +47,7 @@ This stage decomposes the system into manageable units of work through two integ
 - **Team Alignment** - Only if team structure or ownership is unclear
 - **Technical Considerations** - Only if scalability/deployment requirements differ across units
 - **Business Domain** - Only if domain boundaries or bounded contexts are unclear
+- **Code Organization (Greenfield multi-unit only)** - Ask deployment model and directory structure preferences
 
 ## Step 4: Store UOW Plan
 - Save as `aidlc-docs/inception/plans/unit-of-work-plan.md`

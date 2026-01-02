@@ -112,6 +112,12 @@ Create `aidlc-docs/inception/reverse-engineering/code-structure.md`:
 ## Key Classes/Modules
 [Mermaid class diagram or module hierarchy]
 
+### Existing Files Inventory
+[List all source files with their purposes - these are candidates for modification in brownfield projects]
+
+**Example format**:
+- `[path/to/file]` - [Purpose/responsibility]
+
 ## Design Patterns
 ### [Pattern Name]
 - **Location**: [Where used]
