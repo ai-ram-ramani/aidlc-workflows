@@ -39,6 +39,9 @@ This stage generates code for each unit of work through two integrated parts:
   - Repository Layer Generation
   - Repository Layer Unit Testing
   - Repository Layer Summary
+  - Frontend Components Generation (if applicable)
+  - Frontend Components Unit Testing (if applicable)
+  - Frontend Components Summary (if applicable)
   - Database Migration Scripts (if data models exist)
   - Documentation Generation (API docs, README updates)
   - Deployment Artifacts Generation
