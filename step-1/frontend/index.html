@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="calculator" role="application" aria-label="Calculator">
+        <div class="display" data-testid="calculator-display" aria-live="polite" aria-label="Calculator display">0</div>
+        <div class="buttons">
+            <button data-testid="btn-clear" class="btn btn-clear" aria-label="Clear">C</button>
+            <button data-testid="btn-divide" class="btn btn-operator" data-operator="divide" aria-label="Divide">&divide;</button>
+            <button data-testid="btn-multiply" class="btn btn-operator" data-operator="multiply" aria-label="Multiply">&times;</button>
+            <button data-testid="btn-subtract" class="btn btn-operator" data-operator="subtract" aria-label="Subtract">&minus;</button>
+
+            <button data-testid="btn-7" class="btn btn-digit" data-digit="7">7</button>
+            <button data-testid="btn-8" class="btn btn-digit" data-digit="8">8</button>
+            <button data-testid="btn-9" class="btn btn-digit" data-digit="9">9</button>
+            <button data-testid="btn-add" class="btn btn-operator btn-add" data-operator="add" aria-label="Add">+</button>
+
+            <button data-testid="btn-4" class="btn btn-digit" data-digit="4">4</button>
+            <button data-testid="btn-5" class="btn btn-digit" data-digit="5">5</button>
+            <button data-testid="btn-6" class="btn btn-digit" data-digit="6">6</button>
+            <button data-testid="btn-equals" class="btn btn-equals" aria-label="Equals">=</button>
+
+            <button data-testid="btn-1" class="btn btn-digit" data-digit="1">1</button>
+            <button data-testid="btn-2" class="btn btn-digit" data-digit="2">2</button>
+            <button data-testid="btn-3" class="btn btn-digit" data-digit="3">3</button>
+            <button data-testid="btn-0" class="btn btn-digit btn-zero" data-digit="0">0</button>
+
+            <button data-testid="btn-decimal" class="btn btn-digit" data-digit=".">.</button>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

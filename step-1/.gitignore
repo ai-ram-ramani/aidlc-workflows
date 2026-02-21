@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# CDK
+infra/dist/
+cdk.out/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+../*
+../../*
+../../../*
