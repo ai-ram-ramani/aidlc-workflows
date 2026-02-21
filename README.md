@@ -25,17 +25,22 @@ AI-DLC uses [Kiro Steering Files](https://kiro.dev/docs/cli/steering/) within yo
 The commands below assume you extracted the zip to your `Downloads` folder. If you used a different location, replace `Downloads` with your actual folder path.
 
 On macOS/Linux:
+
+```
+git clone <this-repo>
+```
+
 ```bash
 mkdir -p .kiro/steering
-cp -R ~/Downloads/aidlc-rules/aws-aidlc-rules .kiro/steering/
-cp -R ~/Downloads/aidlc-rules/aws-aidlc-rule-details .kiro/
+cp -R ../aidlc-workflows/aidlc-rules/aws-aidlc-rules .kiro/steering/
+cp -R ../aidlc-workflows/aidlc-rules/aws-aidlc-rule-details .kiro/
 ```
 
 On Windows (CMD):
 ```cmd
 mkdir .kiro\steering
-xcopy %USERPROFILE%\Downloads\aidlc-rules\aws-aidlc-rules .kiro\steering\aws-aidlc-rules\ /E /I
-xcopy %USERPROFILE%\Downloads\aidlc-rules\aws-aidlc-rule-details .kiro\aws-aidlc-rule-details\ /E /I
+xcopy ..\aidlc-workflows\aidlc-rules\aws-aidlc-rules .kiro\steering\aws-aidlc-rules\ /E /I
+xcopy ..\aidlc-workflows\aidlc-rules\aws-aidlc-rule-details .kiro\aws-aidlc-rule-details\ /E /I
 ```
 
 Your project should look like:
